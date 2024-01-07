@@ -1,0 +1,117 @@
+
+.introContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: var(--spacing-size-xlarge);
+    width: 100%;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+        margin-top: var(--spacing-size-mamoth);
+    }
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-size-normal);
+    color: var(--color-white);
+    width: 50%;
+    height: calc(20*var(--font-size-huge));
+    padding: 0 var(--spacing-size-mamoth);
+
+    @media only screen and (max-width: 600px) {
+        height: auto;
+        padding: var(--spacing-size-mamoth) var(--spacing-size-small) ;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+.imageSection {
+    background-color: var( --color-light-yellow);
+}
+
+.titleText {
+    font-size: calc(2*var(--font-size-xxhuge));
+    font-weight: 400;
+    letter-spacing: 1.5;
+    margin-top: auto;
+}
+
+.HighlightedText {
+    font-size: calc(2*var(--font-size-xxhuge));
+    font-weight: 600;
+    letter-spacing: 1.5;
+}
+
+.subtittleText {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    opacity: 0.3;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-size-xxsmall);
+    height: calc(1.5*var(--font-size-xmamoth));
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--font-size-xmamoth);
+    max-width: calc(11*var(--font-size-xmamoth));
+    gap: var(--spacing-size-normal);
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.button {
+    border: none;
+    background-color: var(--color-light-yellow);
+    border-radius: var(--font-size-xmamoth);
+    padding: var(--spacing-size-xxsmall) var(--spacing-size-xlarge);
+}
+
+.imageSection {
+    padding: var(--spacing-size-mamoth);
+    background-color: var(--color-light-yellow);
+    border-radius: var(--font-size-large);
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(11*var(--font-size-xmamoth));
+    width: calc(11*var(--font-size-xmamoth));
+    position: relative;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: var(--spacing-size-xxhuge);
+        height: calc(9*var(--font-size-xmamoth));
+        width: calc(9*var(--font-size-xmamoth));
+    }
+}
+
+.humanImage {
+    position: absolute;
+    z-index: 1;
+    width: calc(11*var(--font-size-xmamoth));
+    left: 0;
+    bottom: 0;
+
+    @media only screen and (max-width: 600px) {
+        width: calc(9*var(--font-size-xmamoth));
+    }
+}
+
+.image {
+    width: var(--font-size-xxhuge);
+    margin-left: var(--spacing-size-small);
+}
+

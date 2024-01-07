@@ -1,0 +1,96 @@
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: calc(2*var(--spacing-size-mamoth)) 0;
+    padding: 0 calc(2*var(--spacing-size-mamoth));
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.rightContainer {
+    font-size: calc(2*var(--font-size-xxhuge));
+    color: var(--color-white);
+    width: 40%;
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--spacing-size-mamoth);
+    }
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-size-small);
+}
+
+.arrowBox {
+    width: var(--font-size-huge);
+    height: var(--font-size-huge);
+    background-color: var(--color-white);
+    padding: var(--spacing-size-large);
+    border-radius: var(--font-size-xxhuge);
+}
+
+.arrowImage {
+    margin-top: 3px;
+}
+
+.rightArrow {
+    background-color: var(--color-light-yellow);
+}
+
+.cardContainer {
+    display: flex;
+    gap: var(--spacing-size-small);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid var(--color-black);
+    border-radius: var(--font-size-huge);
+    padding: var(--spacing-size-xhuge);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-size-small);
+    width: calc(10*var(--font-size-huge));
+}
+
+.cardTitle { 
+    font-size: var(--font-size-normal);
+    font-weight: 600;
+}
+
+.cardSubheading {
+    font-size: var(--font-size-small);
+    opacity: 0.3;
+}
+
+.subtitle {
+    opacity: 0.3;
+    font-size: var(--font-size-xnormal);
+}
+
+.button {
+    border: none;
+    background-color: var(--color-light-yellow);
+    font-size: var(--font-size-normal);
+    font-weight: 400;
+    border-radius: var(--font-size-normal);
+    padding: var(--spacing-size-xxsmall) var(--font-size-normal);
+    width: 50%;
+}
+
+.image {
+    width: calc(2*var(--font-size-mamoth));
+    height: calc(2*var(--font-size-mamoth));
+}

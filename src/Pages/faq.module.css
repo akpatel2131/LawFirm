@@ -1,0 +1,50 @@
+.faqContainer {
+    margin-top: calc(2*var(--spacing-size-mamoth));
+    display: flex;
+    justify-content: space-between;
+    gap: calc(4*var(--spacing-size-mamoth));
+    padding: var(--spacing-size-mamoth) calc(2*var(--spacing-size-mamoth));
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: var(--spacing-size-mamoth);
+    }
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+    }
+}
+
+.heading {
+    font-size: calc(2*var(--font-size-mamoth));
+    font-weight: 600;
+}
+
+.subtitle {
+    opacity: 0.3;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-size-mamoth);
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 0;
+    }
+
+    & :global .MuiAccordion-root {
+        background-color: transparent;
+        border-bottom: 2px solid var(--color-black);
+        box-shadow: none;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+}
