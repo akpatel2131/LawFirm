@@ -54,7 +54,7 @@ function AreaOfPractice () {
                 {
                     cards.map((item, index) => (
                         <div className={clsx(item.className, styles.margin)}>
-                            <img className={styles.images} src={item.image}  alt="law Image"/>
+                            <img className={styles.images} src={item.image}  alt="law"/>
                             <span className={item.titleClassName}>{item.title}</span>
                         </div>
                     ))
